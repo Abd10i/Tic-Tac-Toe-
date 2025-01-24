@@ -1,0 +1,100 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    border: 2px solid #d3d3d3;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ff69b4; 
+    margin-bottom: 20px;
+}
+
+#gameMode {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4; 
+    color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff1493; 
+}
+
+#gameStatus {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #4682b4; 
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 0 auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ffffff; 
+    border: 2px solid #4682b4; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0ffff; 
+}
+
+.cell[data-value='X'] {
+    color: #ff69b4;
+}
+
+.cell[data-value='O'] {
+    color: #4682b4; 
+}
+
+#restartButton {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff69b4; 
+    color: #ffffff;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#restartButton:hover {
+    background-color: #ff1493;
+}
